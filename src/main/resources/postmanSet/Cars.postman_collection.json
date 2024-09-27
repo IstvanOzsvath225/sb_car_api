@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "9eaea98d-72aa-48ab-a0da-172e3a735c2d",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38572779"
+	},
+	"item": [
+		{
+			"name": "isEngineRunning",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/1/isEngineRunning",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						"isEngineRunning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkFuelLevel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/1/checkFuelLevel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						"checkFuelLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop engine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/1/stop",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start engine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/1/start",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refuel 10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/1/refuel/?amount=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"1",
+						"refuel",
+						""
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/cars/createCar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"createCar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
