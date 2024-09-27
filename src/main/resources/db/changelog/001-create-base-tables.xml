@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="001" author="o.istvan" context="Creating base tables">
+        <createTable tableName="car">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="engine" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="fuel_tank" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dashboard" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="engine">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="running" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="fuel_tank">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="fuel_level" type="BIGINT" defaultValueNumeric="50">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="dashboard">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="current_message" type="TEXT"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
