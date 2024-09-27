@@ -9,6 +9,7 @@ This is a Spring Boot application that provides an API to manage car operations 
 - [Setup Instructions](#setup-instructions)
 - [Database Configuration](#database-configuration)
 - [Liquibase Setup](#liquibase-setup)
+- [Postman Setup](#postman-setup)
 - [API Endpoints](#api-endpoints)
 - [Exception Handling](#exception-handling)
 - [Testing](#testing)
@@ -74,9 +75,11 @@ Liquibase is used to handle database migrations and schema changes.
 3. **Build Database**:
    When you run the application, database table will be created by liquibase from `001-create-base-tables.xml`'
 ---
+## Postman setup
+`resources/postmanSet/Cars.postman_collection.json` contains available requests for Postman. It can be imported to Postman.
 
+---
 ## API Endpoints
-
 Here are the available API endpoints for managing cars:
 
 ### `POST /api/cars/createCar`
