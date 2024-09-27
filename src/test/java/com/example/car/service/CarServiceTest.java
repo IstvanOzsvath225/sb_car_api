@@ -53,8 +53,6 @@ class CarServiceTest {
         assertNotNull(result);  // Check that a car is returned
         assertEquals(1L, result.getId());  // Ensure the ID is correctly set
 
-        // Verify that the logger logged the car creation message
-
         // Verify that the repository's saveAndFlush method was called
         verify(carRepository, times(1)).saveAndFlush(any(Car.class));
     }
