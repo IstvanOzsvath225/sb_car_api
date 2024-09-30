@@ -20,7 +20,7 @@ This is a Spring Boot application that provides an API to manage car operations 
 
 1. **Clone the repository**
    ```bash
-   git  https://github.com/IstvanOzsvath225/sb_car_api_accenture.git
+   git  https://github.com/IstvanOzsvath225/sb_car_api.git
    ```
 
 2. **Database Configuration**
